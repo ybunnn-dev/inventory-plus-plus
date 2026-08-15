@@ -2,19 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-
-Route::get('/{any}', function () {
-    return view('welcome');
-})->where('any', '.*');
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return auth()->check()
+        ? redirect('/dashboard')
+        : redirect('/login');
 });
 
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login-attempt', [AuthController::class, 'login']);
+
+Route::get('/login', [AuthController::class, 'index']);
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-        return response()->json(['success' => true]);
-    });
+    Route::get('/dashboard', [DashboardController::class, 'index'])
+        ->name('dashboard');
 });
