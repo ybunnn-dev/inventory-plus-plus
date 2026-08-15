@@ -51,15 +51,32 @@
                     <div class="w-full px-12 mt-6">
                         <button
                             @click="login"
-                            class="bg-blue-500 w-full h-10 text-white font-bold rounded-lg"
+                            class="bg-blue-700 hover:bg-blue-200 w-full h-10 text-white hover:text-blue-700 font-bold rounded-lg"
                         >
                             Login
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="bg-blue-300 h-full rounded-r-xl col-span-2">
+            <div class="relative h-full rounded-r-xl col-span-2">
+                <div class="absolute inset-0 bg bg-[url('/cover.jpg')] bg-cover bg-center bg-no-repeat rounded-r-xl"></div>
+                <div class="absolute inset-0 bg-blue-700/70 rounded-r-xl p-20 flex flex-col">
+                    <div class="h-full">
+                        <h1 class="text-7xl font-bold text-white mb-6">Inventory++</h1>
+                        <p class="text-white text-xl text-justify space-y-5">
+                            Elevate your sari-sari store into a smarter, data-driven business.
 
+                            Track your products, monitor inventory levels, record sales, and gain clear insights into your revenue, income, and profit—all in one place.
+
+                            Make informed decisions, reduce losses, and grow your store with confidence.
+
+                            Inventory++ — Smart inventory management for modern sari-sari stores.
+                        </p>
+                    </div>
+                    <div class="h-full"></div>
+                    <div class="h-full"></div>
+
+                </div>
             </div>
         </div>
     </div>
