@@ -2,6 +2,8 @@ import '../css/app.css';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
+import VueApexCharts from 'vue3-apexcharts';
+
 import '@fontsource/montserrat';
 import '@fontsource/montserrat/100.css';
 import '@fontsource/montserrat/200.css';
@@ -27,6 +29,8 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
             .use(plugin)
+            .use(VueApexCharts)
+            .component('apexchart', VueApexCharts)
             .mount(el);
     },
 });
