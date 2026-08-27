@@ -4,6 +4,7 @@ import Summary from './components/summary.vue';
 import LineGraph from './components/linegraph.vue';
 import BarGraph from './components/bar-graph.vue';
 import Donuts from './components/donuts.vue';
+import Recent from './components/recent.vue';
 import { Head } from '@inertiajs/vue3';
 
 defineOptions({
@@ -20,9 +21,7 @@ defineOptions({
                 <Summary />
                 <LineGraph />
             </div>
-            <div class="col-span-1 bg-white rounded-xl">
-
-            </div>
+            <Recent />
         </div>
         <BarGraph />
         <Donuts />

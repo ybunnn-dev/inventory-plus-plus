@@ -3,8 +3,8 @@ import IconRevenue from '../icons/revenue.vue'
 import IconNetProfit from '../icons/net-profit.vue'
 import IconRoi from '../icons/roi.vue'
 
-var totalRevenue = "10,000";
-var totalNetProfit = "2,400";
+var totalRevenue = "P10,000";
+var totalNetProfit = "P2,400";
 var totalRoi = "25%";
 </script>
 
