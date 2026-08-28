@@ -67,7 +67,7 @@ const getBadgeStyles = (status) => {
                 <div class="flex items-center gap-6 text-xs font-medium text-slate-500">
                     <!-- Date & Time -->
                     <div class="flex items-center gap-1.5">
-                        <IconDateTime class="h-5 w-5" />
+                        <IconDateTime class="h-4 w-4" />
                         <span>{{ tx.date }}</span>
                     </div>
 
