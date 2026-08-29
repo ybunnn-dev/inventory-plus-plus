@@ -8,6 +8,7 @@ use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\CreditController;
 
 
 Route::get('/', function () {
@@ -39,6 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/reports', [ReportsController::class, 'index'])
         ->name('report');
 
-
+    Route::get('/credits', [CreditController::class, 'index'])
+        ->name('credits');
 });
 

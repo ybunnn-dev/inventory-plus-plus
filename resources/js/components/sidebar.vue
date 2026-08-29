@@ -7,8 +7,9 @@ import PosIcon from './sidebar-svgs/pos.vue';
 import ProductsIcon from './sidebar-svgs/products.vue';
 import InventoryIcon from './sidebar-svgs/inventory.vue';
 import HistoryIcon from './sidebar-svgs/history.vue';
+import CreditIcon from './sidebar-svgs/credit.vue'; // Imported the new credit icon
 import ReportsIcon from './sidebar-svgs/reports.vue';
-import CalendarIcon from './sidebar-svgs/calendar.vue'; // Imported the new calendar icon
+import CalendarIcon from './sidebar-svgs/calendar.vue';
 
 defineProps({
     isOpen: {
@@ -25,6 +26,7 @@ const menuItems = [
     { name: 'Products', path: '/products', icon: ProductsIcon },
     { name: 'Inventory', path: '/inventory', icon: InventoryIcon },
     { name: 'Transaction History', path: '/transactions', icon: HistoryIcon },
+    { name: 'Utang', path: '/credit', icon: CreditIcon },
     { name: 'Reports', path: '/reports', icon: ReportsIcon }
 ];
 
@@ -123,10 +125,9 @@ onUnmounted(() => {
                 </nav>
             </div>
 
-            <!-- Sticky Date/Time Widget (Placed outside the scrolling div) -->
+            <!-- Sticky Date/Time Widget -->
             <div class="px-3 mt-4 shrink-0">
                 <div class="bg-gray-100 rounded-xl p-3 flex items-center gap-3 border border-gray-200 shadow-sm">
-                    <!-- Adjusted size and color to match image -->
                     <CalendarIcon class="!w-12 !h-12 text-slate-500" />
                     <div class="flex flex-col">
                         <h2 class="text-[13px] font-bold text-slate-600 leading-tight mb-0.5">{{ currentDate }}</h2>
