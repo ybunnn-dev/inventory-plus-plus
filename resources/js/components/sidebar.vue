@@ -26,7 +26,7 @@ const menuItems = [
     { name: 'Products', path: '/products', icon: ProductsIcon },
     { name: 'Inventory', path: '/inventory', icon: InventoryIcon },
     { name: 'Transaction History', path: '/transactions', icon: HistoryIcon },
-    { name: 'Utang', path: '/credit', icon: CreditIcon },
+    { name: 'Utang', path: '/credits', icon: CreditIcon },
     { name: 'Reports', path: '/reports', icon: ReportsIcon }
 ];
 

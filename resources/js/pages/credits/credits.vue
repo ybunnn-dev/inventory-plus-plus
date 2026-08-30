@@ -7,7 +7,7 @@ defineOptions({
 });
 </script>
 <template>
-    <Head title="credit" />
+    <Head title="Credit" />
 
     <div class="p-10 text-gray-700 flex flex-col gap-3">
         <h1 class="font-bold text-4xl">Credit</h1>
